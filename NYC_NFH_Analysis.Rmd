@@ -1,0 +1,49 @@
+---
+title: "New York City Neighborhood Financial Health Analysis"
+author: "Haig Bedros"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+```{r library, include=FALSE}
+library(dplyr)
+library(tidyverse)
+```
+
+`1. Is there a statistically significant difference in the NFH index across the five boroughs of New York City?`
+`2. Are economic and demographic factors, such as race and income, statistically significant predictors of the NFH index in New York City neighborhoods?`
+
+1. Data Collection:
+   - To answer the first research question, you will need to collect data on the NFH index for different neighborhoods in each of the five boroughs of New York City. You can obtain this data from relevant government agencies or organizations that track neighborhood financial health.
+```{r setup, echo=TRUE, results='hide', warning=FALSE, message=FALSE}
+# Load data
+nyc_nfh_od <- read.csv("https://data.cityofnewyork.us/resource/r3dx-pew9.csv")
+```
+
+   - For the second research question, you will need data on economic and demographic factors such as race and income for each neighborhood in New York City. This data can also be sourced from government sources, census data, or surveys.
+
+
+2. Data Analysis:
+   - To analyze the first research question, you can use statistical techniques like analysis of variance (ANOVA) or t-tests to determine if there is a statistically significant difference in the NFH index across the five boroughs.
+
+   - For the second research question, you can perform regression analysis to assess the relationship between economic and demographic factors (e.g., race and income) and the NFH index. This will help you determine if these factors are statistically significant predictors of neighborhood financial health.
+
+
+3. Interpretation:
+   - After conducting your analyses, you should interpret the results in the context of your research questions. For the first question, you can discuss whether significant differences exist among the boroughs and if so, which boroughs have higher or lower NFH scores.
+
+   - For the second question, you can discuss the strength and direction of the relationships between economic and demographic factors and the NFH index. Are certain factors more influential than others in predicting neighborhood financial health?
+
+
+4. Implications and Recommendations:
+   - Based on your findings, you can discuss the implications for policymakers, community organizations, or other stakeholders. Do your results suggest any specific interventions or strategies that could improve neighborhood financial health in certain areas?
+
+
+5. Limitations:
+   - Acknowledge any limitations in your study, such as data limitations or potential sources of bias, which could affect the validity and generalizability of your findings.
+
+
+6. Conclusion:
+   - Summarize your study's key findings and how they address the research questions. Also, highlight the broader significance of your research in understanding and addressing neighborhood financial health disparities in New York City.
+
